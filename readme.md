@@ -14,20 +14,20 @@ import {Entity, PrimaryKey, Property} from "@mikro-orm/core"
 
 @Entity()
 export class User {
-   @PrimaryKey()
-   id!: number
+  @PrimaryKey()
+  id!: number
 
-   @Property()
-   fullName!: string
+  @Property()
+  fullName!: string
 
-   @Property()
-   email!: string
+  @Property()
+  email!: string
 
-   @Property()
-   password!: string
+  @Property()
+  password!: string
 
-   @Property({type: "text"})
-   bio = ""
+  @Property({type: "text"})
+  bio = ""
 }
 ```
 
@@ -54,7 +54,8 @@ To verify this code works in `tsc`, you can compile the module via `pnpm tsc`
 command and see that it outputs `issue.js` file as expected.
 You can run it via `node issue.js` to verify that everything works.
 
-This project also includes tsimp (which is using tsc under the hood), swc-node and tsx. Here's how you can verify that this code runs with each of these packages:
+This project also includes [`tsimp`](https://npmjs.com/package/tsimp) (which is using tsc under the hood), [`@swc-node/register`](https://npmjs.com/package/@swc-node/register) and [`tsx`](https://npmjs.com/package/tsx).
+Here's how you can verify that this code runs with each of these packages:
 
 * tsimp: `node --import tsimp .`
 * tsx: `node --import tsx .`
