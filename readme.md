@@ -5,7 +5,7 @@ Reproduction for jiti issue with legacy class properties decorators
 # The problem
 
 Jiti fails to run code with TS legacy decorators on properties if they're not initialized in constructor.
-Such code is valid and you may see it in server-side projects, such as those using [`Mikro ORM`](https://mikro-orm.io/).
+Such code is valid for TypeScript and Node.js (when compiled via tsc) and you may see it in server-side projects, such as those using [`Mikro ORM`](https://mikro-orm.io/).
 
 Here's typical example for Mikro ORM entity:
 
