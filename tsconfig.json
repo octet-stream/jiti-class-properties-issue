@@ -1,0 +1,12 @@
+{
+  "include": ["**/*.ts"],
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true
+  }
+}
